@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  color: #d50187;
+  font-size: 50px;
+}
+
+
+.box{
+  width: 100%;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+.box div{
+  position: relative;
+  background: grey;
+  width: 90%;
+  border:3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  box-shadow:  3px 3px 5px #666666, 
+             -2px -2px 5px lightgrey;
+}
+
+.top{
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  border: 1.5px solid black;
+  width: 120px;
+  color: white;
+  padding: 3px 5px;
+  top: -1px;
+  right: -1px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.one{
+  background: #ea2e67;
+}
+ .two{
+  background: seagreen;
+}
+ .three{
+  background: #339e93;
+}
+.bottom{
+  margin: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 8px 12px;
+  font-family: Verdana , sans-serif;
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,.col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
